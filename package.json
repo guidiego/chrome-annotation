@@ -1,0 +1,27 @@
+{
+  "name": "chrome-annotation",
+  "version": "1.0.0",
+  "description": "Give you the possibility to annotate and print something on the screen",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guidiego/chrome-annotation.git"
+  },
+  "keywords": [
+    "chrome",
+    "app",
+    "extension",
+    "canvas",
+    "annotate",
+    "utility"
+  ],
+  "author": ["Guilherme Diego", "Nihey Takizawa"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guidiego/chrome-annotation/issues"
+  },
+  "homepage": "https://github.com/guidiego/chrome-annotation"
+}
