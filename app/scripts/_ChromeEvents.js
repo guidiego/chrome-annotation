@@ -1,3 +1,5 @@
+var initialized = false;
+
 chrome.browserAction.onClicked.addListener(function(tab){
   var canvas   = new ChromeAnnotationCanvas(),
       commands = [
@@ -6,7 +8,12 @@ chrome.browserAction.onClicked.addListener(function(tab){
         'document.getElementById("chrome-annotation-write-pad-id").classList.toggle("opened")'
       ];
 
+  if (initialized) {
+    commands.splice(0, 2);
+  }
+
   chrome.tabs.executeScript({
     code : commands.join(";")
   });
+  initialized = true;
 });

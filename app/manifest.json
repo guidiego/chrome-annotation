@@ -22,7 +22,8 @@
 
   "content_scripts" : [{
     "matches" : ["http://*/*", "https://*/*"],
-    "js" : ["vendors/Sketchpad.js"]
+    "js": ["vendors/Sketchpad.js"],
+    "css": ["assets/css/master.css"]
   }],
 
   "permissions": ["tabs", "activeTab", "http://*/*", "https://*/*", "webNavigation"]

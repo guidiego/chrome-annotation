@@ -1,0 +1,16 @@
+#chrome-annotation-write-pad-id {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  transition: transform 1s ease-in-out;
+  transform: translateY(-100%);
+}
+
+#chrome-annotation-write-pad-id.opened {
+  transform: translateY(0);
+}
+
+#chrome-annotation-write-pad-id.opened > canvas {
+  cursor: crosshair;
+  background-color: rgba(103, 128, 159, 0.5);
+}
