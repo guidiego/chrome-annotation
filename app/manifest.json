@@ -8,15 +8,15 @@
     "scripts" : ["app.js"]
   },
   "icons"            : {
-    "16"  : "assets/img/GB-19.png",
-    "48"  : "assets/img/GB-48.png",
-    "128" : "assets/img/GB-128.png"
+    "16"  : "assets/img/CA-19.png",
+    "48"  : "assets/img/CA-48.png",
+    "128" : "assets/img/CA-128.png"
   },
 
   "browser_action"      : {
     "default_icon" : {
-      "16"  : "assets/img/GB-19.png",
-      "48"  : "assets/img/GB-48.png"
+      "16"  : "assets/img/CA-19.png",
+      "48"  : "assets/img/CA-48.png"
     }
   },
 
