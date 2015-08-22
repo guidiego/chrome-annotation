@@ -23,7 +23,8 @@
   "content_scripts" : [{
     "matches" : ["http://*/*", "https://*/*"],
     "js": ["vendors/Sketchpad.js"],
-    "css": ["assets/css/master.css"]
+    "css": ["assets/css/master.css"],
+    "run_at": "document_end"
   }],
 
   "permissions": ["tabs", "activeTab", "http://*/*", "https://*/*", "webNavigation"]
