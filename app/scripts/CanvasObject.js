@@ -1,7 +1,12 @@
 function ChromeAnnotationCanvas() {
-  var canvas = document.createElement("canvas");
+  var elem   = document.createElement("div"),
+      wrap   = document.createElement("div"),
+      canvas = document.createElement("canvas");
+  wrap.id = "chrome-annotation-write-pad-id";
+  wrap.appendChild(canvas);
+  elem.appendChild(wrap);
 
   this.get = function() {
-    return canvas;
+    return elem.innerHTML.toString();
   }
-}
+};

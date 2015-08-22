@@ -20,5 +20,10 @@
     }
   },
 
-  "permissions": ["tabs", "activeTab"]
+  "content_scripts" : [{
+    "matches" : ["http://*/*", "https://*/*"],
+    "js" : ["vendors/Sketchpad.js"]
+  }],
+
+  "permissions": ["tabs", "activeTab", "http://*/*", "https://*/*", "webNavigation"]
 }

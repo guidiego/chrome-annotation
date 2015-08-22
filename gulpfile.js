@@ -10,7 +10,7 @@ gulp.task("default", ["build"], function () {
 });
 
 //Build
-gulp.task("build", ["css", "images", "scripts", "files"], function () {
+gulp.task("build", ["css", "images", "vendors", "scripts", "files"], function () {
   console.log("Build Process Complete");
 });
 
@@ -22,6 +22,12 @@ gulp.task("css", function () {
         .pipe(minify())
         .pipe(gulp.dest("dist/assets/css"));
 });
+
+//Vendors Process
+gulp.task("vendors", function () {
+  gulp.src("app/vendors/**/*")
+    .pipe(gulp.dest("dist/vendors"));
+})
 
 //IMG Process
 gulp.task("images", function () {
