@@ -1,5 +1,9 @@
+body.chrome-annotation-opened{
+  overflow-y: hidden;
+}
+
 #chrome-annotation-write-pad-id {
-  z-index: 9999;
+  z-index: 99990;
   position: fixed;
   top: 0;
   transition: transform 1s ease-in-out;
@@ -12,5 +16,36 @@
 
 #chrome-annotation-write-pad-id.opened > canvas {
   cursor: crosshair;
-  background-color: rgba(103, 128, 159, 0.5);
 }
+
+#chrome-annotation-write-pad-id > nav {
+  box-sizing: border-box;
+  width: 240px;
+  height: 52px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0px;
+}
+
+#chrome-annotation-write-pad-id > nav > button {
+  float: left;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 5px;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+}
+
+ #chrome-annotation-write-pad-id > nav > input {
+   float: left;
+   min-width: 36px;
+   height: 36px;
+   border: 1px solid #FFF;
+   margin: 0 5px;
+   color: #FFF;
+   cursor: pointer;
+ }
