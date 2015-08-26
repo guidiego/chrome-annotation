@@ -2,8 +2,16 @@ function clone(object) {
   return JSON.parse(JSON.stringify(object));
 };
 
+function WindowObject() {
+	this.getScrollTop = function () {
+		return window.document.scrollTop;
+	}
+}
+
 function Sketchpad(config) {
-  // Enforces the context for all functions
+	this._win = new WindowObject();
+	
+	// Enforces the context for all functions
   for (var key in this.constructor.prototype) {
     this[key] = this[key].bind(this);
   }
@@ -46,7 +54,7 @@ function Sketchpad(config) {
 Sketchpad.prototype._cursorPosition = function(event) {
   return {
     x: event.pageX - this.canvas.offsetLeft,
-    y: event.pageY - this.canvas.offsetTop,
+		y: event.pageY - this.canvas.offsetTop - document.body.scrollTop	
   };
 };
 
@@ -189,7 +197,7 @@ Sketchpad.prototype.reset = function() {
 Sketchpad.prototype.drawStroke = function(stroke) {
   for (var j = 0; j < stroke.lines.length; j++) {
     var line = stroke.lines[j];
-    this._draw(line.start, line.end, stroke.color, stroke.size);
+		this._draw(line.start, line.end, stroke.color, stroke.size);
   }
 };
 
