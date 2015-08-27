@@ -16,12 +16,12 @@ function ChromeAnnotationPainel() {
   colorPiker.id   = "chrome-annotation-painel-color-button";
   btnDo.id        = "chrome-annotation-painel-do-button";
   btnUndo.id      = "chrome-annotation-painel-undo-button";
-  //btnPrint.id     = "chrome-annotation-painel-print-button";
+  btnPrint.id     = "chrome-annotation-painel-print-button";
 
   nav.appendChild(colorPiker);
   nav.appendChild(btnDo);
   nav.appendChild(btnUndo);
- // nav.appendChild(btnPrint);
+  //nav.appendChild(btnPrint);
 
 
   this.get = function() {

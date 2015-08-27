@@ -20,7 +20,7 @@ body.chrome-annotation-opened{
 
 #chrome-annotation-write-pad-id > nav {
   box-sizing: border-box;
-  width: 240px;
+  width: 190px;
   height: 52px;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -37,15 +37,18 @@ body.chrome-annotation-opened{
   margin: 0 5px;
   text-align: center;
   color: #FFF;
+	padding: 0 2px;
   cursor: pointer;
 }
 
  #chrome-annotation-write-pad-id > nav > input {
    float: left;
-   min-width: 36px;
-   height: 36px;
+	 width: 40px !important;
+   height: 38px !important;
    border: 1px solid #FFF;
    margin: 0 5px;
    color: #FFF;
    cursor: pointer;
+	 padding: 0px;
+	 background: none;
  }
